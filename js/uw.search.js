@@ -15,18 +15,18 @@ UW.Search = Backbone.View.extend({
   searchbar :
                '<div class="container no-height" role="search">'+
                   '<div class="center-block uw-search-wrapper">'+
-                    '<form class="uw-search" action="<%= UW.baseUrl %>">'+
+                    '<form class="uw-search" action="<%= UW.baseUrl %>" tabindex="-1">'+
                       '<div class="search-form-wrapper">'+
                         '<label class="screen-reader" for="uw-search-bar">Search UW</label>' +
-                        '<input id="uw-search-bar" type="search" name="s" value="" autocomplete="off" placeholder="Search" />'+
+                        '<input id="uw-search-bar" type="search" name="s" value="" autocomplete="off" placeholder="Search" tabindex="-1" />'+
                       '</div>'+
 
-                      '<select id="mobile-search-select" class="visible-xs" aria-label="Search scope">' +
-                        '<option value="uw" selected>All the UW</option>' +
-                        '<option value="site">Current site</option>' +
+                      '<select id="mobile-search-select" class="visible-xs" aria-label="Search scope" tabindex="-1">' +
+                        '<option value="uw">All the UW</option>' +
+                        '<option value="site" selected>Current site</option>' +
                       '</select>' +
 
-                      '<input type="submit" value="search" class="search" tabindex="0"/>'+
+                      '<input type="submit" value="search" class="search" tabindex="-1" />'+
 
                         '<fieldset style="margin: 0; padding: 0; border: 1px; solid #ffffff;">'+
 
@@ -34,12 +34,12 @@ UW.Search = Backbone.View.extend({
 
                         '<div id="search-labels" class="labels hidden-xs">'+
                            '<label class="radio">'+
-                             '<input class="radiobtn" type="radio" name="search" value="uw" data-toggle="radio" checked />'+
+                             '<input class="radiobtn" type="radio" name="search" value="uw" data-toggle="radio" tabindex="-1" />'+
                              'All the UW'+
                            '</label>'+
 
                            '<label class="radio">'+
-                             '<input class="radiobtn" type="radio" name="search" value="site" data-toggle="radio" />'+
+                             '<input class="radiobtn" type="radio" name="search" value="site" data-toggle="radio" checked tabindex="-1"  />'+
                              'Current site'+
                            '</label>'+
 
@@ -97,8 +97,14 @@ UW.Search = Backbone.View.extend({
     if ( this.toggle.settings.isOpen ) {
         this.$el.find( '#uw-search-bar' ).focus();
         this.$el.attr( 'aria-hidden', 'false' ).attr( 'role', 'search' );
+        this.$el.find( 'form' ).attr( 'tabindex', 0 );
+        this.$el.find( 'input' ).attr( 'tabindex', 0 );
+        this.$el.find( 'select' ).attr( 'tabindex', 0 );
     } else {
         this.$el.attr( 'aria-hidden', 'true' ).removeAttr( 'role' );
+        this.$el.find( 'form' ).attr( 'tabindex', -1 );
+        this.$el.find( 'input' ).attr( 'tabindex', -1 );
+        this.$el.find( 'select' ).attr( 'tabindex', -1 );
     }
   },
 

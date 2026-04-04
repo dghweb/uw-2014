@@ -39,7 +39,7 @@ UW.elements = {
   slideshow  : '.uw-slideshow',
   social     : '.uw-social',
   vimeo      : '.uw-vimeo',
-  youtube    : '.uw-youtube'
+  youtube    : '.uw-youtube',
   togglemobile  : '#mobile-sidebar',
 
 }
