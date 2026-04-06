@@ -6,7 +6,7 @@ else: ?>
     <ul id="big-links"> 
         <li><span class="icon-myuw"></span><a href="https://my.uw.edu/" tabindex="-1">MyUW</a></li> 
         <li><span class="icon-calendar"></span><a href="https://www.washington.edu/calendar/" tabindex="-1">Calendar</a></li> 
-        <li><span class="icon-directories"></span><a href=https://directory.uw.edu/" tabindex="-1">Directories</a></li> 
+        <li><span class="icon-directories"></span><a href="https://directory.uw.edu/" tabindex="-1">Directories</a></li> 
         <li><span class="icon-libraries"></span><a href="https://lib.uw.edu/" tabindex="-1">Libraries</a></li> 
         <li><span class="icon-medicine"></span><a href="https://www.uwmedicine.org/" tabindex="-1">UW Medicine</a></li> 
         <li><span class="icon-maps"></span><a href="https://www.washington.edu/maps/" tabindex="-1">Maps</a></li> 
