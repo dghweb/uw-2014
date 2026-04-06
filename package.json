@@ -1,6 +1,6 @@
 {
   "name": "uw",
-  "repository": "github:uweb/uw-2014",
+  "repository": "github:dghweb/uw-2014",
   "version": "0.1.0",
   "devDependencies": {
     "clean-css": "^4.2.1",

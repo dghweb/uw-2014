@@ -5,6 +5,11 @@ The UW 2014 Theme is available to anyone wishing to apply the Boundless UW brand
 This is an overview of the custom widgets, plugins and various features it includes.
 
 
+## Note!
+
+This is a fork of the UW 2014 Theme.
+
+
 ## Table of contents
  - - -
 
