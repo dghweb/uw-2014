@@ -29,7 +29,9 @@
 
     <div id="uwsearcharea" aria-hidden="true" class="uw-search-bar-container"></div>
 
-    <a id="main-content" href="#main_content" class="screen-reader-shortcut">Skip to main content</a>
+    <nav aria-label="skip to content link">
+        <a id="main-content" href="#main_content" class="screen-reader-text">Skip to main content</a>
+    </nav>
 
     <div id="uw-container">
         
