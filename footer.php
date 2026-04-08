@@ -4,7 +4,7 @@
 
         <a href="https://www.washington.edu/boundless/"><h3 class="be-boundless">Be boundless</h3></a>
 
-        <h4>Connect with us:</h4>
+        <div class="h4" id="social_preface">Connect with us:</div>
 
         <nav aria-label="social networking">
             <ul class="footer-social">

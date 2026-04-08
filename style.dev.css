@@ -8776,7 +8776,8 @@ body.error404 .woof {
 .uw-footer .be-boundless:focus {
   opacity: 0.8;
 }
-.uw-footer h4 {
+.uw-footer h4,
+.uw-footer .h4 {
   font-family: "Encode Sans Compressed", sans-serif;
   color: #fff;
   font-weight: 400;
@@ -8785,7 +8786,9 @@ body.error404 .woof {
   margin: 41px 0 11px 0;
 }
 .uw-footer h4:before,
-.uw-footer h4:after {
+.uw-footer .h4:before,
+.uw-footer h4:after,
+.uw-footer .h4:after {
   content: "";
   position: absolute;
   width: 85px;
@@ -8794,10 +8797,12 @@ body.error404 .woof {
   left: 50%;
   margin-left: -40px;
 }
-.uw-footer h4:before {
+.uw-footer h4:before,
+.uw-footer .h4:before {
   top: -27px;
 }
-.uw-footer h4:after {
+.uw-footer h4:after,
+.uw-footer .h4:after {
   bottom: -85px;
 }
 .uw-footer ul.footer-social li {
