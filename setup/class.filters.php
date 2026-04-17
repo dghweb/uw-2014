@@ -151,7 +151,7 @@ class UW_Filters
    // Adds a more link button to the end of the excerpt
   function excerpt_more_override($excerpt)
   {
-    return $excerpt . '<div><a class="more" href="' . get_permalink() . '">Read more</a></div>';
+    return $excerpt . '<div><a class="more" href="' . get_permalink() . '">Read more <span class="screen-reader-text">about ' . get_the_title() . '</span></a></div>';
   }
 
   //allow short usernames
