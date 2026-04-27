@@ -41,7 +41,7 @@ class UW_AccordionShortcode
         wp_enqueue_script( 'uw-accordionmodule', get_template_directory_uri() . '/js/uw.accordionmodule.js', array( 'jquery' ), $parent_version, true );
         $output = do_shortcode( $content );
         $name = !empty( $accordion_atts['name'] ) ? '<h3>' . $accordion_atts['name'] . '</h3>' : '';
-        return sprintf( '<div id="uw-accordion-shortcode">%s<div class="js-accordion" data-accordion-prefix-classes="uw-accordion-shortcode">%s</div></div>', $name, $output );
+        return sprintf( '<div class="uw-accordion-shortcode">%s<div class="js-accordion" data-accordion-prefix-classes="uw-accordion-shortcode">%s</div></div>', $name, $output );
     }
 
     function section_handler( $atts, $content )
